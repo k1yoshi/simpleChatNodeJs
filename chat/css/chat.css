@@ -1,0 +1,86 @@
+body
+{
+	background: #ccc;
+	color: #222;
+	font-size: 16px;
+	text-align: center;
+}
+body fieldset
+{
+	border: none;
+}
+input[type="text"]:focus
+{
+	outline: 0px;
+}
+body > section
+{
+	height: 100%;
+}
+section > fieldset > strong
+{
+	color: #444;
+	font-size: 1.2em;
+	float: left;
+	text-align: left;
+	width: 100%;
+}	
+section > fieldset input
+{
+	background: rgba(0, 0, 0, 0);
+	border: none;
+	border-bottom: 1px solid #0080FF;
+	color: #333;
+	width: 100%;
+}
+section > article
+{
+	margin-top: 1em;
+	text-align: left;
+	width: 100%;
+}
+section > article > div
+{
+	background: #eee;
+	min-height: 10em;
+	max-height: 10em;
+	overflow-y: scroll; 
+	width: 100%;
+}
+section > article .nick
+{
+	width: 100%;
+	color: #05f;
+}
+section > article .nick.yo
+{
+	color: #f22;
+}
+section > article label
+{
+	color: #333;
+}
+section > article > fieldset
+{
+	margin: 1.5em 0;
+	padding: 0;
+	width: 100%;
+}
+section > article > fieldset > textarea
+{
+	border: none;
+	color: #333;
+	height: 3.5em;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+section > article > fieldset > button
+{
+	float: right;
+	width: 30%;
+}
+textarea:focus
+{
+	outline: 0;
+}

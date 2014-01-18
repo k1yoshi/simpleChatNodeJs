@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Chat K1yoshi</title>
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/chat.css">
+
+	<script type="text/javascript" src="script/prefixfree.js"></script>
+	<script type="text/javascript" src="http://localhost:3000/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script type="text/javascript" src="script/chat.js"></script>
+</head>
+<body>
+	<section>
+		<fieldset>
+			<strong>Nick:</strong>
+			<input type="text" id="txt_nick" placehoder="Ingrese su Nick"/>
+		</fieldset>
+		<article>
+			<div class="mensajes">
+				<!--Ejemplo de como iriran los mensaje
+				<strong class="nick">Nick:</strong>
+				<fieldset>
+					<label>
+						Resto de texto del mensaje
+					</label>
+				</fieldset>
+				<strong class="nick yo">Nick:</strong>
+				<fieldset>
+					<label>
+						Este es un mensaje escrito por mi
+					</label>
+				</fieldset>
+				-->
+			</div>
+			<fieldset>
+				<textarea id="txt_mensaje"></textarea>
+				<button id="btn_enviar">Enviar</button>
+			</fieldset>
+		</article>
+	</section>
+</body>
+</html>
