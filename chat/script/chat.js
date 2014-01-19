@@ -8,12 +8,18 @@ function inicioChat()
 
 	$('#btn_enviar').on('click', sendMessage);
 
+	/*
+		@getMessages
+		Funcion para la recepcion de mensajes de parte del servidor 
+	*/
 	function getMessages(data)
 	{
+		//los datos que recibimos los agregamos al dom
 		agregarMessage(data.nick, data.message, false);
 	}
 	function sendMessage(event)
 	{
+		//Capturamos los valores y los enviamos al servido para que el se las envie a todos los clientes conectados
 		var nick, message;
 		nick = $('#txt_nick').val();
 		if(nick.trim() == '')
@@ -32,6 +38,7 @@ function inicioChat()
 	}	
 	function agregarMessage(nick, message, yo)
 	{
+		//El agregar el mensaje al dom lo podemos en una funcion para que se nos haga mas facil el trabajo
 		yo = yo || false;
 		var strong_nick, fieldset, label_message;
 		strong_nick = $('<strong/>').text(nick).addClass('nick');
